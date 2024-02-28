@@ -22,8 +22,6 @@ map Q gq
 
 " Highlight copied text
 Plug 'machakann/vim-highlightedyank'
-" Commentary plugin
-Plug 'tpope/vim-commentary'
 " adds comment out
 Plug 'tpope/vim-commentary'
 

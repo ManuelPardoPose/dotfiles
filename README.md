@@ -4,7 +4,10 @@ It will be work in progress
 
 
 ## List of the software that is related to the configs:
-- *Neovim <-> nvim*
+- *NeoVim*
+- *neofetch*
+- *alacritty*
+- *IdeaVim*
 
 
 ## Notes for the dotfiles:
@@ -20,3 +23,7 @@ It will be work in progress
 - *alacritty*
 
   I have the Font set to JetBrains Mono and the theme set to Catppuccin Mocha.
+
+- *ideavim*
+
+  added commenting plugin and sneak
