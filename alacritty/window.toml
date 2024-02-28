@@ -1,2 +1,5 @@
 [window]
-opacity = 1
+opacity = 0.6
+decorations = "Buttonless"
+dimensions.columns = 300
+dimensions.lines = 200

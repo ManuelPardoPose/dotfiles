@@ -49,6 +49,5 @@ vim.opt.scrolloff = 10
 
 vim.opt.colorcolumn = "80"
 
-
 -- KEYMAP
 vim.keymap.set('n', 't', '<cmd>NvimTreeToggle<cr>')
