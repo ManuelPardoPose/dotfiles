@@ -49,5 +49,8 @@ vim.opt.scrolloff = 10
 
 vim.opt.colorcolumn = "80"
 
+-- replace tilde sign on new lines with " "
+vim.opt.fillchars = {eob = " "}
+
 -- KEYMAP
 vim.keymap.set('n', 't', '<cmd>NvimTreeToggle<cr>')
