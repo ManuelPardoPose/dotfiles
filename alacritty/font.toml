@@ -1,17 +1,48 @@
 [font]
+
+# JetBrains FONT
 normal.family = "JetBrains Mono"
 normal.style = "Regular"
-
 bold.family = "JetBrains Mono"
 bold.style = "Bold"
-
 italic.family = "JetBrains Mono"
 italic.style = "Italic"
-
-# Point size of the font
 size = 20.0
-
-# Offset is the extra space around each character. `offset.y` can be thought of
-# as modifying the line spacing, and `offset.x` as modifying the letter spacing.
 offset.x = 0
 offset.y = 0
+
+
+# MS DOS FONT
+# normal.family = "Perfect DOS VGA 437 Win"
+# normal.style = "Regular"
+# bold.family = "Perfect DOS VGA 437 Win"
+# bold.style = "Bold"
+# italic.family = "Perfect DOS VGA 437 Win"
+# italic.style = "Italic"
+# size = 25.0
+# offset.x = 0
+# offset.y = 0
+
+
+# Commodore
+# normal.family = "Pet Me"
+# normal.style = "Medium"
+# bold.family = "Pet Me"
+# bold.style = "Bold"
+# italic.family = "Pet Me"
+# italic.style = "Italic"
+# size = 20.0
+# offset.x = 0
+# offset.y = 0
+
+
+# Fraktur
+# normal.family = "Breitkopf Fraktur"
+# normal.style = "Regular"
+# bold.family = "Pet Me"
+# bold.style = "Bold"
+# italic.family = "Pet Me"
+# italic.style = "Italic"
+# size = 25.0
+# offset.x = 0
+# offset.y = 0
