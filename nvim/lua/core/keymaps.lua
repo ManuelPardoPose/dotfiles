@@ -1,6 +1,6 @@
 local map = require("helpers.keys").map
 
-map("n", "K", vim.lsp.buf.hover, {})
+map("n", "K", vim.lsp.buf.hover, "Lsp Buf Hover")
 
 -- Quick access to some common actions
 map("n", "<leader>ww", "<cmd>w<cr>", "Write")
