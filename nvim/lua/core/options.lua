@@ -40,3 +40,4 @@ end
 -- things that have no bool or int as val
     -- replace tilde sign on new lines with " "
 vim.opt.fillchars = {eob = " "}
+vim.opt.nrformats:append({'alpha', 'octal'})
