@@ -30,13 +30,14 @@ return {
                 [[      ░  ░░ ░       ░  ░  ░      ░      ░ ░  ]],
                 [[          ░                                  ]],
             }
+            -- icons below are nerd font icons
             dashboard.section.buttons.val = {
-                dashboard.button("n", "+  New file", ":ene <BAR> startinsert <CR>"),
-                dashboard.button("f", "🔎 Find file", ":Telescope find_files <CR>"),
-                dashboard.button("t", "🔎 Find text", ":Telescope live_grep <CR>"),
-                dashboard.button("r", "🕦 Recently used files", ":Telescope oldfiles <CR>"),
-                dashboard.button("c", "⚙  Configuration", ":e $MYVIMRC <CR>"),
-                dashboard.button("q", "❌ Quit Neovim", ":qa<CR>"),
+                dashboard.button("n", " New file", ":ene <BAR> startinsert <CR>"),
+                dashboard.button("f", " Find file", ":Telescope find_files <CR>"),
+                dashboard.button("t", "󱎸 Find text", ":Telescope live_grep <CR>"),
+                dashboard.button("r", " Recently used files", ":Telescope oldfiles <CR>"),
+                dashboard.button("c", " Configuration", ":e $MYVIMRC <CR>"),
+                dashboard.button("q", " Quit Neovim", ":qa<CR>"),
             }
 
             local function footer()
@@ -48,7 +49,7 @@ return {
                 --     month = 2,
                 --     day = 3,
                 --     hour = 22,
-                --     min = 20,
+                --     min = 5,
                 -- })
                 local hour = date.hour
                 if (hour >= 22 or hour <= 2) then
@@ -56,8 +57,8 @@ return {
                 elseif (hour >= 11 and hour <= 14) then
                     footerString = footerString .. "Ess was zu Mittag 🥐!\n"
                 end
-                footerString = footerString .. "Zeit  | " .. date.hour .. ":" .. date.min .. "\n"
-                footerString = footerString .. "Datum | " .. date.day .. "." .. date.month .. "." .. date.year
+                footerString = footerString .. "Zeit  | " .. os.date('%H:%M') .. "\n"
+                footerString = footerString .. "Datum | " .. os.date('%d.%m.%Y')
                 return footerString
             end
 
