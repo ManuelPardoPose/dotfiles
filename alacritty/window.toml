@@ -1,6 +1,6 @@
 [window]
 opacity = 0.6
 # opacity = 1
-decorations = "Buttonless"
+decorations = "Buttonless" # macOS only
 dimensions.columns = 300
 dimensions.lines = 200

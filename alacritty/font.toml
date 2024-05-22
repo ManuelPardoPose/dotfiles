@@ -1,11 +1,23 @@
 [font]
 
 # JetBrains FONT
-normal.family = "JetBrains Mono"
+# normal.family = "JetBrains Mono"
+# normal.style = "Regular"
+# bold.family = "JetBrains Mono"
+# bold.style = "Bold"
+# italic.family = "JetBrains Mono"
+# italic.style = "Italic"
+# size = 20.0
+# offset.x = 0
+# offset.y = 0
+
+
+# Iosevka
+normal.family = "Iosevka Nerd Font Mono"
 normal.style = "Regular"
-bold.family = "JetBrains Mono"
+bold.family = "Iosevka Nerd Font Mono"
 bold.style = "Bold"
-italic.family = "JetBrains Mono"
+italic.family = "Iosevka Nerd Font Mono"
 italic.style = "Italic"
 size = 20.0
 offset.x = 0
