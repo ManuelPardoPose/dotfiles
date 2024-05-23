@@ -1,3 +1,4 @@
+-- Latex
 return {
   "lervag/vimtex",
   init = function()

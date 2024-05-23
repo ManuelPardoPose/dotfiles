@@ -1,4 +1,4 @@
--- This is the splashscreen plugin and config
+-- Splashscreen
 return {
     {
         'goolord/alpha-nvim',

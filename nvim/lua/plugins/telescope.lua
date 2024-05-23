@@ -1,4 +1,4 @@
--- This is the telescope plugin and config
+-- Telescope
 return {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.6',

@@ -1,4 +1,4 @@
--- This is the telescope plugin and config
+-- Bottom Statusline
 return {
     'nvim-lualine/lualine.nvim',
     dependencies = {

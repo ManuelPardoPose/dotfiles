@@ -1,4 +1,4 @@
--- This is the nvim-tree plugin and config
+-- Filetree
 return {
     "nvim-tree/nvim-tree.lua",
     version = "*",

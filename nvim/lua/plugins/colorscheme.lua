@@ -1,3 +1,4 @@
+-- Set Colorscheme
 function InitTheme()
 	-- local color = "catppuccin"
 	-- local color = "tokyonight"

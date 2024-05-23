@@ -1,3 +1,4 @@
+-- Latex Snippets
 return {
     "iurimateus/luasnip-latex-snippets.nvim",
     dependencies = {
