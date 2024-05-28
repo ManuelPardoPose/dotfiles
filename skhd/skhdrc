@@ -72,7 +72,7 @@ ctrl + alt - s : yabai --start-service
 ctrl + alt - q : yabai --stop-service
 
 # open alacritty
-cmd - return : /opt/homebrew/Caskroom/alacritty/0.13.1/Alacritty.app/Contents/MacOS/alacritty
+cmd - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
 
 # open safari
 cmd - b : open -a Safari -n
