@@ -1,6 +1,10 @@
 local map = require("helpers.keys").map
 
 map("n", "K", vim.lsp.buf.hover, "Lsp Buf Hover")
+map("n", "gd", vim.lsp.buf.definition, "Lsp Buf Definition")
+map("n", "grn", vim.lsp.buf.rename, "Lsp Buf Rename")
+map("n", "gra", vim.lsp.buf.code_action, "Lsp Buf Code Action")
+map("n", "grr", vim.lsp.buf.references, "Lsp Buf References")
 
 -- Quick access to some common actions
 map("n", "<leader>ww", "<cmd>w<cr>", "Write")
@@ -33,3 +37,9 @@ map("n", "<leader>lq", vim.diagnostic.setloclist, "Quickfix")
 -- Drag line up and down
 map("v", "K", ":m '<-2<CR>gv=gv", "move line up")
 map("v", "J", ":m '>+1<CR>gv=gv", "move line down")
+
+-- Execute "make"
+map("n", "<leader>mk", "<cmd>!make<cr>", "make")
+
+-- Toggle Markdown Preview
+map("n", "<leader>md", "<cmd>MarkdownPreviewToggle<cr>", "MarkdownPreviewToggle")
