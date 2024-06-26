@@ -1,0 +1,183 @@
+wtf:
+  colors:
+    border:
+      focusable: darkslateblue
+      focused: orange
+      normal: gray
+
+  grid:
+    columns: [35, 35, 35, 35, 35, 90]
+    rows: [8, 7, 9, 3, 3, 3, 3, 90]
+  refreshInterval: 1
+
+  mods:
+    personal_todo:
+      type: "todo"
+      title: "Personal Todo"
+      checkedIcon: "X"
+      colors:
+        checked: gray
+        highlight:
+          fore: "black"
+          back: "orange"
+      enabled: true
+      filename: "personal_todo.yml"
+      position:
+        top: 0
+        left: 0
+        height: 1
+        width: 1
+      refreshInterval: 15
+
+    work_todo:
+      type: "todo"
+      title: "Work Todo"
+      checkedIcon: "X"
+      colors:
+        checked: gray
+        highlight:
+          fore: "black"
+          back: "orange"
+      enabled: true
+      filename: "work_todo.yml"
+      position:
+        top: 0
+        left: 1
+        height: 1
+        width: 1
+      refreshInterval: 15
+    
+    clocks:
+      colors:
+        rows:
+          even: "lightblue"
+          odd: "white"
+      enabled: true
+      locations:
+        Berlin: "Europe/Berlin"
+        CDMX: "America/Mexico_City"
+        Lisboa: "Europe/Lisbon"
+        NewYork: "America/New_York"
+        Shanghai: "Asia/Shanghai"
+      position:
+        top: 1
+        left: 1
+        height: 1
+        width: 1
+      refreshInterval: 15s
+      sort: "alphabetical"
+      title: "Zeit"
+      type: "clocks"
+
+    feedreader:
+      enabled: true
+      feeds:
+      - https://www.g24.gal/rss/-/asset_publisher/sdvp/rss
+      feedLimit: 30
+      position:
+        top: 0
+        left: 2
+        width: 2
+        height: 2
+      refreshInterval: 14400
+
+    power:
+      enabled: true
+      position:
+        top: 1
+        left: 0
+        height: 1
+        width: 1
+      refreshInterval: 15m
+      title: "⚡️"
+
+    textfile:
+      title: "Schedule"
+      enabled: true
+      filePath: "~/.config/wtf/schedule.md"
+      format: true
+      position:
+        top: 3
+        left: 2
+        height: 4
+        width: 2
+      refreshInterval: 15m
+      wrapText: false
+
+    uptime:
+      title: "uptime"
+      args: [""]
+      cmd: "uptime"
+      enabled: true
+      position:
+        top: 6
+        left: 0
+        height: 1
+        width: 2
+      refreshInterval: 15m
+      type: cmdrunner
+
+    github_status:
+      title: "github status"
+      type: cmdrunner
+      args: ["status"]
+      cmd: "gh"
+      enabled: true
+      position:
+        top: 2
+        left: 0
+        height: 1
+        width: 3
+      refreshInterval: 1h
+
+    github_repo_stats:
+      title: "github repo stats"
+      type: cmdrunner
+      args: ["-c", "echo 'total:' $(gh repo ls | wc -l) '  private:' $(gh repo ls | grep private | wc -l) '  public:' $(gh repo ls | grep public | wc -l) '  forks:' $(gh repo ls | grep fork | wc -l)"]
+      cmd: "bash"
+      enabled: true
+      position:
+        top: 3
+        left: 0
+        height: 1
+        width: 2
+      refreshInterval: 1h
+
+    brew_info:
+      title: "brew info"
+      type: cmdrunner
+      args: ["info"]
+      cmd: "brew"
+      enabled: true
+      position:
+        top: 4
+        left: 0
+        height: 1
+        width: 2
+      refreshInterval: 1h
+
+    brew_list_formulae:
+      title: "brew formulae/casks"
+      type: cmdrunner
+      args: ["-c", "echo 'formulae:' $(brew list --formulae|wc -l) '  casks:' $(brew list --casks|wc -l)"]
+      cmd: "bash"
+      enabled: true
+      position:
+        top: 5
+        left: 0
+        height: 1
+        width: 2
+      refreshInterval: 1h
+
+    prettyweather:
+        enabled: true
+        city: "Karlsruhe"
+        position:
+            top: 2
+            left: 3
+            height: 1
+            width: 1
+        refreshInterval: 15m
+        unit: "m"
+        view: 0
+        language: "en"
