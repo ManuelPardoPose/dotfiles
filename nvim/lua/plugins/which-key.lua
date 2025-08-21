@@ -7,7 +7,7 @@ return {
         vim.o.timeoutlen = 500
     end,
     opts = {
-        window = {
+        win = {
             border = "single", -- none, single, double, shadow
             position = "bottom", -- bottom, top
             margin = { 2, 2, 2, 2 }, -- extra window margin [top, right, bottom, left]. When between 0 and 1, will be treated as a percentage of the screen size.
